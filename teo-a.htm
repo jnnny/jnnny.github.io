@@ -5,28 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>te0</title>
 
-<style>
+
+    <style>
 
 
-.slider {
-  position: absolute;
-  width: 100%;
-  top: calc(50%});
-  overflow: hidden;
-}
-
-.slider-row {
-    width: $img-w * $ratio;
-    height: $img-h * $ratio;
-    background-image: url(teo0.jpg);
-    background-size: $img-w * $ratio $img-h * $ratio;
-    animation: slide $speed linear infinite;
-  }
-
-@keyframes slide {
-  from { background-position-x: 0; }
-  to   { background-position-x: -$img-w * $ratio; }
-}
+img:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+    }
 
 </style>
 
@@ -36,10 +22,22 @@
   <body>
 
 
-    <div class="slider">
-      <div class="slider-row"></div>
-    </div>
+  <marquee behavior="scroll" direction="left">
+          <img src="teo0.jpg" height="400">
+          <img src="teo1.jpg" height="400">
+          <img src="teo0.jpg" height="400">
+          <img src="teo1.jpg" height="400">
+          <img src="teo0.jpg" height="400">
+  </marquee>
+  <br>
+  <marquee behavior="scroll" direction="right">
+          <img src="teo1.jpg" height="380" style="-webkit-transform:rotate(180deg);">
+          <img src="teo0.jpg" height="380" style="-webkit-transform:rotate(180deg);">
+          <img src="teo1.jpg" height="380" style="-webkit-transform:rotate(180deg);">
+          <img src="teo0.jpg" height="380" style="-webkit-transform:rotate(180deg);">
+          <img src="teo1.jpg" height="380" style="-webkit-transform:rotate(180deg);">
+  </marquee>
 
-  </body>
+</body>
 
 </html>
